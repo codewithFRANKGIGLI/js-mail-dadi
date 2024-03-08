@@ -14,11 +14,11 @@ let aiRoll = faceDice[Math.floor(Math.random() * faceDice.length)];
 console.log(aiRoll);
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
-const winner;
+
 if(userRoll == aiRoll) {
-  prompt('Parità');
+  alert('Tu: ' + userRoll +' Computer: ' + aiRoll + ' ----> Parità');
 } else if(userRoll < aiRoll) {
-  prompt('Hai perso');
+  alert('Tu: ' + userRoll +' Computer: ' + aiRoll + ' ----> Hai perso');
 } else {
-  prompt('Hai Vinto!');
-}
+  alert('Tu: ' + userRoll +' Computer: ' + aiRoll + ' ----> Hai Vinto!');
+};
